@@ -1,0 +1,189 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.layout {
+    width: 30%;
+} 
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 7px;
+}
+
+/* Common Styles */
+.box {
+    border: 2px solid #000;
+}
+
+/* Template Layout */
+.long{
+    border: 1px solid rgb(12, 4, 83);
+}
+.template {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 7px;
+}
+
+.template-box-1 {
+    background-color: #2d3142;
+    height: 100px;
+    grid-column: span 2;
+    
+}
+
+.template-box-2 {
+    background-color: #2d3142;
+    height: 100px;
+    grid-row: span 2;
+    height: 220px;
+}
+
+.template-box-3 {
+    background-color: #2d3142;
+    height: 100px;    
+}
+
+.template-box-4 {
+    background-color: #2d3142;
+    height: 100px;   
+}
+
+.template-box-5 {
+    background-color: #2d3142;
+    height: 100px;
+    grid-column: span 2;
+    
+}
+
+.template-box-6 {
+    background-color: #2d3142;
+    height: 100px;
+    grid-column: span 2;
+}
+
+
+
+
+.hand{
+    border: 2px solid rgb(12, 90, 80);
+}
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 7px;
+}
+
+.flexbox .box {
+    background-color: #ff6b6b;
+}
+
+.flexbox-box-1 {
+    height: 100px;
+}
+
+.flexbox-row {
+    display: flex;
+    gap: 20px;
+}
+
+.flexbox-box-2 {
+    height: 210px;
+    flex: 1;
+}
+
+.flexbox-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.flexbox-box-3 {
+    height: 100px;
+}
+
+.flexbox-box-4 {
+    height: 100px;
+}
+
+.flexbox-box-5 {
+    height: 100px;
+}
+.flexbox-box-6 {
+    height: 100px;
+}
+
+/* Grid Layout */
+.send{
+    border: 2px solid rgb(87, 6, 6);
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "article text1"
+        "article text2"
+        "main main"
+        "footer footer";
+    gap: 10px;
+    padding: 7px;
+}
+
+.grid .header {
+    grid-area: header;
+    background-color: #2d3142;
+    height: 100px;
+}
+
+.grid .text1 {
+    grid-area: text1;
+    background-color: #2d3142;
+    height: 100px;
+}
+
+.grid .article {
+    grid-area: article;
+    background-color: #2d3142;
+    height: 210px;
+}
+
+.grid .text2 {
+    grid-area: text2;
+    background-color: #2d3142;
+    height: 100px;
+}
+
+.grid .main {
+    grid-area: main;
+    background-color: #2d3142;
+    height: 100px;
+}
+
+.grid .footer {
+    grid-area: footer;
+    background-color: #2d3142;
+    height: 100px;
+}
+
+.grid-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
